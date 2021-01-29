@@ -3,12 +3,9 @@ export class Category {
     name: string;
     description: string;
 
-    constructor(
-        id: number, 
-        name: string, 
-        description: string) {
-            this.id = id || 0;
-            this.name = name || "";
-            this.description = description || "";
+    constructor(properties: Category) {
+        this.id = properties.id || 0;
+        this.name = properties.name || "";
+        this.description = properties.description || "";
     }
 }
