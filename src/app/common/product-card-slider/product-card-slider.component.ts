@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Product, Category } from 'src/app/model/classes';
 
 @Component({
   selector: 'app-product-card-slider',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductCardSliderComponent implements OnInit {
 
-  products: string[] = ["alma", "körte", "barack", "citrom", "banán"]
+  products: Product[] = [
+    
+  ]
 
   constructor() { }
 
