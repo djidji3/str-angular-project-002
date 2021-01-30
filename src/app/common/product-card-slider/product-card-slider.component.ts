@@ -8,9 +8,7 @@ import { Product, Category } from 'src/app/model/classes';
 })
 export class ProductCardSliderComponent implements OnInit {
 
-  products: Product[] = [
-    
-  ]
+  products: string[] = ["alma", "körte", "barack", "citrom", "banán"]
 
   constructor() { }
 
