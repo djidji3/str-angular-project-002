@@ -17,8 +17,8 @@ export class ProductserviceService {
     active: true,
   }, {
     id: 2,
-    catId: 111,
-    name: 'Férfi ing bézs színű',
+    catId: 112,
+    name: 'Férfi ing kék színű',
     description: 'Jó minőségű pamutból készül bézs színü ing. Kellemes viselet.',
     image: '/assets/img/ferfi-ing-bezs.jpg',
     price: 100,
@@ -27,8 +27,8 @@ export class ProductserviceService {
     active: true,
   }, {
     id: 3,
-    catId: 111,
-    name: 'Férfi ing bézs színű',
+    catId: 113,
+    name: 'Férfi ing piros színű',
     description: 'Jó minőségű pamutból készül bézs színü ing. Kellemes viselet.',
     image: '/assets/img/ferfi-ing-bezs.jpg',
     price: 100,
@@ -37,8 +37,8 @@ export class ProductserviceService {
     active: true,
   }, {
     id: 4,
-    catId: 111,
-    name: 'Férfi ing bézs színű',
+    catId: 114,
+    name: 'Férfi ing rózsaszín színű',
     description: 'Jó minőségű pamutból készül bézs színü ing. Kellemes viselet.',
     image: '/assets/img/ferfi-ing-bezs.jpg',
     price: 100,
@@ -47,8 +47,8 @@ export class ProductserviceService {
     active: true,
   }, {
     id: 5,
-    catId: 111,
-    name: 'Férfi ing bézs színű',
+    catId: 115,
+    name: 'Férfi ing világoskék színű',
     description: 'Jó minőségű pamutból készül bézs színü ing. Kellemes viselet.',
     image: '/assets/img/ferfi-ing-bezs.jpg',
     price: 100,
@@ -57,8 +57,8 @@ export class ProductserviceService {
     active: true,
   }, {
     id: 6,
-    catId: 111,
-    name: 'Férfi ing bézs színű',
+    catId: 121,
+    name: 'Férfi kabát barna színű',
     description: 'Jó minőségű pamutból készül bézs színü ing. Kellemes viselet.',
     image: '/assets/img/ferfi-ing-bezs.jpg',
     price: 100,
@@ -67,8 +67,8 @@ export class ProductserviceService {
     active: true,
   }, {
     id: 7,
-    catId: 111,
-    name: 'Férfi ing bézs színű',
+    catId: 122,
+    name: 'Férfi kabát fekete színű',
     description: 'Jó minőségű pamutból készül bézs színü ing. Kellemes viselet.',
     image: '/assets/img/ferfi-ing-bezs.jpg',
     price: 100,
@@ -77,8 +77,8 @@ export class ProductserviceService {
     active: true,
   }, {
     id: 8,
-    catId: 111,
-    name: 'Férfi ing bézs színű',
+    catId: 123,
+    name: 'Férfi kabát piros színű',
     description: 'Jó minőségű pamutból készül bézs színü ing. Kellemes viselet.',
     image: '/assets/img/ferfi-ing-bezs.jpg',
     price: 100,
@@ -87,8 +87,8 @@ export class ProductserviceService {
     active: true,
   }, {
     id: 9,
-    catId: 111,
-    name: 'Férfi ing bézs színű',
+    catId: 124,
+    name: 'Férfi kabát sárga színű',
     description: 'Jó minőségű pamutból készül bézs színü ing. Kellemes viselet.',
     image: '/assets/img/ferfi-ing-bezs.jpg',
     price: 100,
@@ -97,8 +97,8 @@ export class ProductserviceService {
     active: true,
   }, {
     id: 10,
-    catId: 111,
-    name: 'Férfi ing bézs színű',
+    catId: 125,
+    name: 'Férfi ing zöld színű',
     description: 'Jó minőségű pamutból készül bézs színü ing. Kellemes viselet.',
     image: '/assets/img/ferfi-ing-bezs.jpg',
     price: 100,
@@ -107,7 +107,7 @@ export class ProductserviceService {
     active: true,
   }, {
     id: 11,
-    catId: 111,
+    catId: 131,
     name: 'Férfi ing bézs színű',
     description: 'Jó minőségű pamutból készül bézs színü ing. Kellemes viselet.',
     image: '/assets/img/ferfi-ing-bezs.jpg',
@@ -117,7 +117,7 @@ export class ProductserviceService {
     active: true,
   }, {
     id: 12,
-    catId: 111,
+    catId: 132,
     name: 'Férfi ing bézs színű',
     description: 'Jó minőségű pamutból készül bézs színü ing. Kellemes viselet.',
     image: '/assets/img/ferfi-ing-bezs.jpg',
@@ -127,7 +127,7 @@ export class ProductserviceService {
     active: true,
   }, {
     id: 13,
-    catId: 111,
+    catId: 133,
     name: 'Férfi ing bézs színű',
     description: 'Jó minőségű pamutból készül bézs színü ing. Kellemes viselet.',
     image: '/assets/img/ferfi-ing-bezs.jpg',
@@ -137,7 +137,7 @@ export class ProductserviceService {
     active: true,
   }, {
     id: 14,
-    catId: 111,
+    catId: 134,
     name: 'Férfi ing bézs színű',
     description: 'Jó minőségű pamutból készül bézs színü ing. Kellemes viselet.',
     image: '/assets/img/ferfi-ing-bezs.jpg',
@@ -147,7 +147,7 @@ export class ProductserviceService {
     active: true,
   }, {
     id: 15,
-    catId: 111,
+    catId: 135,
     name: 'Férfi ing bézs színű',
     description: 'Jó minőségű pamutból készül bézs színü ing. Kellemes viselet.',
     image: '/assets/img/ferfi-ing-bezs.jpg',
@@ -157,7 +157,7 @@ export class ProductserviceService {
     active: true,
   }, {
     id: 16,
-    catId: 111,
+    catId: 141,
     name: 'Férfi ing bézs színű',
     description: 'Jó minőségű pamutból készül bézs színü ing. Kellemes viselet.',
     image: '/assets/img/ferfi-ing-bezs.jpg',
@@ -167,7 +167,7 @@ export class ProductserviceService {
     active: true,
   }, {
     id: 17,
-    catId: 111,
+    catId: 142,
     name: 'Férfi ing bézs színű',
     description: 'Jó minőségű pamutból készül bézs színü ing. Kellemes viselet.',
     image: '/assets/img/ferfi-ing-bezs.jpg',
@@ -177,7 +177,7 @@ export class ProductserviceService {
     active: true,
   }, {
     id: 18,
-    catId: 111,
+    catId: 143,
     name: 'Férfi ing bézs színű',
     description: 'Jó minőségű pamutból készül bézs színü ing. Kellemes viselet.',
     image: '/assets/img/ferfi-ing-bezs.jpg',
@@ -187,7 +187,7 @@ export class ProductserviceService {
     active: true,
   }, {
     id: 19,
-    catId: 111,
+    catId: 144,
     name: 'Férfi ing bézs színű',
     description: 'Jó minőségű pamutból készül bézs színü ing. Kellemes viselet.',
     image: '/assets/img/ferfi-ing-bezs.jpg',
@@ -197,7 +197,7 @@ export class ProductserviceService {
     active: true,
   }, {
     id: 20,
-    catId: 111,
+    catId: 145,
     name: 'Férfi ing bézs színű',
     description: 'Jó minőségű pamutból készül bézs színü ing. Kellemes viselet.',
     image: '/assets/img/ferfi-ing-bezs.jpg',
@@ -207,7 +207,7 @@ export class ProductserviceService {
     active: true,
   }, {
     id: 21,
-    catId: 111,
+    catId: 151,
     name: 'Férfi ing bézs színű',
     description: 'Jó minőségű pamutból készül bézs színü ing. Kellemes viselet.',
     image: '/assets/img/ferfi-ing-bezs.jpg',
@@ -217,7 +217,7 @@ export class ProductserviceService {
     active: true,
   }, {
     id: 22,
-    catId: 111,
+    catId: 152,
     name: 'Férfi ing bézs színű',
     description: 'Jó minőségű pamutból készül bézs színü ing. Kellemes viselet.',
     image: '/assets/img/ferfi-ing-bezs.jpg',
@@ -227,7 +227,7 @@ export class ProductserviceService {
     active: true,
   }, {
     id: 23,
-    catId: 111,
+    catId: 153,
     name: 'Férfi ing bézs színű',
     description: 'Jó minőségű pamutból készül bézs színü ing. Kellemes viselet.',
     image: '/assets/img/ferfi-ing-bezs.jpg',
@@ -237,7 +237,7 @@ export class ProductserviceService {
     active: true,
   }, {
     id: 24,
-    catId: 111,
+    catId: 154,
     name: 'Férfi ing bézs színű',
     description: 'Jó minőségű pamutból készül bézs színü ing. Kellemes viselet.',
     image: '/assets/img/ferfi-ing-bezs.jpg',
@@ -247,7 +247,7 @@ export class ProductserviceService {
     active: true,
   }, {
     id: 25,
-    catId: 111,
+    catId: 155,
     name: 'Férfi ing bézs színű',
     description: 'Jó minőségű pamutból készül bézs színü ing. Kellemes viselet.',
     image: '/assets/img/ferfi-ing-bezs.jpg',
@@ -257,7 +257,7 @@ export class ProductserviceService {
     active: true,
   }, {
     id: 26,
-    catId: 111,
+    catId: 211,
     name: 'Férfi ing bézs színű',
     description: 'Jó minőségű pamutból készül bézs színü ing. Kellemes viselet.',
     image: '/assets/img/ferfi-ing-bezs.jpg',
@@ -267,7 +267,7 @@ export class ProductserviceService {
     active: true,
   }, {
     id: 27,
-    catId: 111,
+    catId: 212,
     name: 'Férfi ing bézs színű',
     description: 'Jó minőségű pamutból készül bézs színü ing. Kellemes viselet.',
     image: '/assets/img/ferfi-ing-bezs.jpg',
@@ -277,7 +277,7 @@ export class ProductserviceService {
     active: true,
   }, {
     id: 28,
-    catId: 111,
+    catId: 213,
     name: 'Férfi ing bézs színű',
     description: 'Jó minőségű pamutból készül bézs színü ing. Kellemes viselet.',
     image: '/assets/img/ferfi-ing-bezs.jpg',
@@ -287,7 +287,7 @@ export class ProductserviceService {
     active: true,
   }, {
     id: 29,
-    catId: 111,
+    catId: 214,
     name: 'Férfi ing bézs színű',
     description: 'Jó minőségű pamutból készül bézs színü ing. Kellemes viselet.',
     image: '/assets/img/ferfi-ing-bezs.jpg',
@@ -297,7 +297,7 @@ export class ProductserviceService {
     active: true,
   }, {
     id: 30,
-    catId: 111,
+    catId: 215,
     name: 'Férfi ing bézs színű',
     description: 'Jó minőségű pamutból készül bézs színü ing. Kellemes viselet.',
     image: '/assets/img/ferfi-ing-bezs.jpg',
@@ -307,7 +307,7 @@ export class ProductserviceService {
     active: true,
   }, {
     id: 31,
-    catId: 111,
+    catId: 221,
     name: 'Férfi ing bézs színű',
     description: 'Jó minőségű pamutból készül bézs színü ing. Kellemes viselet.',
     image: '/assets/img/ferfi-ing-bezs.jpg',
@@ -317,7 +317,7 @@ export class ProductserviceService {
     active: true,
   }, {
     id: 32,
-    catId: 111,
+    catId: 222,
     name: 'Férfi ing bézs színű',
     description: 'Jó minőségű pamutból készül bézs színü ing. Kellemes viselet.',
     image: '/assets/img/ferfi-ing-bezs.jpg',
@@ -327,7 +327,7 @@ export class ProductserviceService {
     active: true,
   }, {
     id: 33,
-    catId: 111,
+    catId: 223,
     name: 'Férfi ing bézs színű',
     description: 'Jó minőségű pamutból készül bézs színü ing. Kellemes viselet.',
     image: '/assets/img/ferfi-ing-bezs.jpg',
@@ -337,7 +337,7 @@ export class ProductserviceService {
     active: true,
   }, {
     id: 34,
-    catId: 111,
+    catId: 224,
     name: 'Férfi ing bézs színű',
     description: 'Jó minőségű pamutból készül bézs színü ing. Kellemes viselet.',
     image: '/assets/img/ferfi-ing-bezs.jpg',
@@ -347,7 +347,7 @@ export class ProductserviceService {
     active: true,
   }, {
     id: 35,
-    catId: 111,
+    catId: 225,
     name: 'Férfi ing bézs színű',
     description: 'Jó minőségű pamutból készül bézs színü ing. Kellemes viselet.',
     image: '/assets/img/ferfi-ing-bezs.jpg',
@@ -357,7 +357,7 @@ export class ProductserviceService {
     active: true,
   }, {
     id: 36,
-    catId: 111,
+    catId: 231,
     name: 'Férfi ing bézs színű',
     description: 'Jó minőségű pamutból készül bézs színü ing. Kellemes viselet.',
     image: '/assets/img/ferfi-ing-bezs.jpg',
@@ -367,7 +367,7 @@ export class ProductserviceService {
     active: true,
   }, {
     id: 37,
-    catId: 111,
+    catId: 232,
     name: 'Férfi ing bézs színű',
     description: 'Jó minőségű pamutból készül bézs színü ing. Kellemes viselet.',
     image: '/assets/img/ferfi-ing-bezs.jpg',
@@ -377,7 +377,7 @@ export class ProductserviceService {
     active: true,
   }, {
     id: 38,
-    catId: 111,
+    catId: 233,
     name: 'Férfi ing bézs színű',
     description: 'Jó minőségű pamutból készül bézs színü ing. Kellemes viselet.',
     image: '/assets/img/ferfi-ing-bezs.jpg',
@@ -387,7 +387,7 @@ export class ProductserviceService {
     active: true,
   }, {
     id: 39,
-    catId: 111,
+    catId: 234,
     name: 'Férfi ing bézs színű',
     description: 'Jó minőségű pamutból készül bézs színü ing. Kellemes viselet.',
     image: '/assets/img/ferfi-ing-bezs.jpg',
@@ -397,7 +397,7 @@ export class ProductserviceService {
     active: true,
   }, {
     id: 40,
-    catId: 111,
+    catId: 235,
     name: 'Férfi ing bézs színű',
     description: 'Jó minőségű pamutból készül bézs színü ing. Kellemes viselet.',
     image: '/assets/img/ferfi-ing-bezs.jpg',
@@ -407,7 +407,7 @@ export class ProductserviceService {
     active: true,
   }, {
     id: 41,
-    catId: 111,
+    catId: 241,
     name: 'Férfi ing bézs színű',
     description: 'Jó minőségű pamutból készül bézs színü ing. Kellemes viselet.',
     image: '/assets/img/ferfi-ing-bezs.jpg',
@@ -417,7 +417,7 @@ export class ProductserviceService {
     active: true,
   }, {
     id: 42,
-    catId: 111,
+    catId: 242,
     name: 'Férfi ing bézs színű',
     description: 'Jó minőségű pamutból készül bézs színü ing. Kellemes viselet.',
     image: '/assets/img/ferfi-ing-bezs.jpg',
@@ -427,7 +427,7 @@ export class ProductserviceService {
     active: true,
   }, {
     id: 43,
-    catId: 111,
+    catId: 243,
     name: 'Férfi ing bézs színű',
     description: 'Jó minőségű pamutból készül bézs színü ing. Kellemes viselet.',
     image: '/assets/img/ferfi-ing-bezs.jpg',
@@ -437,7 +437,7 @@ export class ProductserviceService {
     active: true,
   }, {
     id: 44,
-    catId: 111,
+    catId: 244,
     name: 'Férfi ing bézs színű',
     description: 'Jó minőségű pamutból készül bézs színü ing. Kellemes viselet.',
     image: '/assets/img/ferfi-ing-bezs.jpg',
@@ -447,7 +447,7 @@ export class ProductserviceService {
     active: true,
   }, {
     id: 45,
-    catId: 111,
+    catId: 245,
     name: 'Férfi ing bézs színű',
     description: 'Jó minőségű pamutból készül bézs színü ing. Kellemes viselet.',
     image: '/assets/img/ferfi-ing-bezs.jpg',
@@ -457,7 +457,7 @@ export class ProductserviceService {
     active: true,
   }, {
     id: 46,
-    catId: 111,
+    catId: 251,
     name: 'Férfi ing bézs színű',
     description: 'Jó minőségű pamutból készül bézs színü ing. Kellemes viselet.',
     image: '/assets/img/ferfi-ing-bezs.jpg',
@@ -467,7 +467,7 @@ export class ProductserviceService {
     active: true,
   }, {
     id: 47,
-    catId: 111,
+    catId: 252,
     name: 'Férfi ing bézs színű',
     description: 'Jó minőségű pamutból készül bézs színü ing. Kellemes viselet.',
     image: '/assets/img/ferfi-ing-bezs.jpg',
@@ -477,7 +477,7 @@ export class ProductserviceService {
     active: true,
   }, {
     id: 48,
-    catId: 111,
+    catId: 253,
     name: 'Férfi ing bézs színű',
     description: 'Jó minőségű pamutból készül bézs színü ing. Kellemes viselet.',
     image: '/assets/img/ferfi-ing-bezs.jpg',
@@ -487,7 +487,7 @@ export class ProductserviceService {
     active: true,
   }, {
     id: 49,
-    catId: 111,
+    catId: 254,
     name: 'Férfi ing bézs színű',
     description: 'Jó minőségű pamutból készül bézs színü ing. Kellemes viselet.',
     image: '/assets/img/ferfi-ing-bezs.jpg',
@@ -497,7 +497,7 @@ export class ProductserviceService {
     active: true,
   }, {
     id: 50,
-    catId: 111,
+    catId: 255,
     name: 'Férfi ing bézs színű',
     description: 'Jó minőségű pamutból készül bézs színü ing. Kellemes viselet.',
     image: '/assets/img/ferfi-ing-bezs.jpg',
