@@ -7,6 +7,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { Cat01Component } from './page/cat01/cat01.component';
 import { Cat02Component } from './page/cat02/cat02.component';
 import { HomeComponent } from './page/home/home.component';
+import { ProductCardComponent } from './common/product-card/product-card.component';
 import { ProductCardSliderComponent } from './common/product-card-slider/product-card-slider.component';
 
 @NgModule({
@@ -16,7 +17,8 @@ import { ProductCardSliderComponent } from './common/product-card-slider/product
     Cat01Component,
     Cat02Component,
     HomeComponent,
-    ProductCardSliderComponent
+    ProductCardComponent,
+    ProductCardSliderComponent,
   ],
   imports: [
     BrowserModule,
