@@ -1,4 +1,4 @@
-class Product {
+export class Product {
   id: number;
   catId: number;
   image: string;
@@ -23,7 +23,7 @@ class Product {
   }
 }
 
-class Category {
+export class Category {
   id: number;
   name: string;
   description: string;
