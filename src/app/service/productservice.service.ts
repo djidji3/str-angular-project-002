@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
+import { Product } from '../model/classes';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductserviceService {
 
-  list: object[] = [{
+  list: Product[] = [{
     id: 1,
     catId: 111,
     name: 'Férfi ing bézs színű',
