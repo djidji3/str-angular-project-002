@@ -19,7 +19,7 @@ export class ProductserviceService {
     id: 2,
     catId: 112,
     name: 'Férfi ing kék színű',
-    description: 'Jó minőségű pamutból készül bézs színü ing. Kellemes viselet.',
+    description: 'Jó minőségű pamutból készül kék színü ing. Kellemes viselet.',
     image: '/assets/img/ferfi-ing-bezs.jpg',
     price: 100,
     stock: 10,
