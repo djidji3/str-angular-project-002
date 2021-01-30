@@ -35,7 +35,7 @@ szükséges oszályokat és szolgáltatásokat (service).
 - Category osztály: id, name, description
 > _Ezeket a model almappába érdemes elhelyezni az app mappán belül, hogy egy helyen legyenek._
 - ProductService: ez egy service legyen, így tudtok egyet generálni a service almappába: 
-`ng g service service/kutya`
+`ng g service service/kutya` 
 > A ProductService tartalmazzon egy list nevű változót, ami a termékek tömbje legyen.  
 > Ebben szerepeljen random adatokkal legalább 50 termék, segítség: `https://mockaroo.com`
 
@@ -68,7 +68,7 @@ Kiindulásnak jó lehet (de módosítsátok): `https://getbootstrap.com/docs/4.6
 pld: `<app-product-card [product]="product"></app-product-card>`
 - Statikus komponens, azaz nem kell bele output tulajdonság (egyenlőre :))))
 
-### 2. Temék lapozó komponens
+### 2. Termék lapozó komponens
 Az öt terméket jeleníti meg. A főoldalon kettő, a kategória oldalakon egy van belőle, 
 csak különböző termékekkel. Tehát ez jeleníti meg a főoldalon a kiemelt és akciós 
 termékeket, a kategória oldalakon pedig a kategória kiemelt termékeit.
