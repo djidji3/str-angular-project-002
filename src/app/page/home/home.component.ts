@@ -8,9 +8,9 @@ import { Product, Category } from 'src/app/model/classes';
 })
 export class HomeComponent implements OnInit {
   products: Product[];
-
-  constructor() {
-    // const topFiveFeaturedProducts: Product[] =
+  
+  constructor() { 
+    // const topFiveFeaturedProducts: Product[] = 
     //   this.products
     //     .filter( product => product.featured )
     //     .sort( () => 0.5 - Math.random())
