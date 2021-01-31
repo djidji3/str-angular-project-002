@@ -1,5 +1,7 @@
 <h2>Kiemelt termékek</h2>
-<app-product-card-slider *ngFor="let product of topFiveFeaturedProducts"></app-product-card-slider>
-....
+<app-product-card-slider [products]="topFiveFeaturedProducts" class="card-deck" *ngFor="let featProduct of topFiveFeaturedProducts"></app-product-card-slider>
+<!-- *ngFor="let product of topFiveFeaturedProducts"  -->
+
 <h2>Akciós termékek</h2>
-<app-product-card-slider></app-product-card-slider>
+<app-product-card-slider [products]="topFiveDiscountProducts" class="card-deck" *ngFor="let discProduct of topFiveDiscountProducts"></app-product-card-slider>
+<!-- *ngFor="let product of products"  -->

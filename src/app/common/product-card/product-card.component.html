@@ -1,11 +1,12 @@
-<p>product-card works!</p>
-
 <div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
+    <img src="{{ products[4].image }}" class="card-img-top" alt="{{ products[4].name }}">
     <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <h5 class="card-title">{{ products[4].name }}</h5>
+        <p class="card-text">
+            {{ products[4].description }}
+        </p>
+        <small class="text-muted">{{ products[4].stock }} db van raktáron</small>
+        <h6>${{ products[4].price }}</h6>
+        <a href="#" class="btn btn-primary">Megnézem</a>
     </div>
 </div>

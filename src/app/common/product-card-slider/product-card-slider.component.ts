@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { ProductserviceService } from 'src/app/service/productservice.service';
+import { Component, Input, OnInit } from '@angular/core';
+import { Product } from 'src/app/model/classes';
 
 @Component({
   selector: 'app-product-card-slider',
@@ -7,9 +7,11 @@ import { ProductserviceService } from 'src/app/service/productservice.service';
   styleUrls: ['./product-card-slider.component.scss']
 })
 export class ProductCardSliderComponent implements OnInit {
-  products = ProductserviceService.list;
-    
-  constructor() { }
+  @Input() products: Product[];
+
+  constructor() { 
+    console.log(this.products);
+  }
     
   ngOnInit(): void {
   }
