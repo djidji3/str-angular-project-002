@@ -19,8 +19,6 @@ export class ProductCardListComponent implements OnInit {
 
   onChangePhrase(event: Event):void {
     this.phrase = (event.target as HTMLInputElement).value;
-    console.log(this.phrase);
-    console.log("GOMBRÓL FELEMELTEM");
   }
 
 }
