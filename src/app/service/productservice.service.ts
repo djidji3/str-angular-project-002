@@ -151,7 +151,7 @@ export class ProductserviceService {
     catId: 135,
     name: 'Férfi kardigán tarka színű',
     description: 'Jó minőségű pamutból készült tarka színű kardigán. Kellemes viselet.',
-    image: '/assets/img/ferfi-kardigán-tarka.jpg',
+    image: '/assets/img/ferfi-kardigan-tarka.jpg',
     price: 8510,
     stock: 41,
     featured: true,
