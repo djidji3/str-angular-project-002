@@ -10,11 +10,11 @@ const routes: Routes = [
     component: HomeComponent,
   },
   {
-    path: 'cat01',
+    path: 'ferfi',
     component: Cat01Component,
   },
   {
-    path: 'cat02',
+    path: 'noi',
     component: Cat02Component,
   },
   {

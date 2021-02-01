@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductserviceService } from 'src/app/service/productservice.service';
 
 @Component({
   selector: 'app-cat01',
@@ -6,8 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cat01.component.scss']
 })
 export class Cat01Component implements OnInit {
+  products = this.productService.list;
 
-  constructor() { }
+  constructor( private productService: ProductserviceService ) { }
 
   ngOnInit(): void {
   }
