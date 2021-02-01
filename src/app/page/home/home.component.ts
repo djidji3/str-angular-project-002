@@ -10,20 +10,20 @@ import { ProductserviceService } from 'src/app/service/productservice.service';
 export class HomeComponent implements OnInit {
 
   products = this.productService.list;
-  
-  topFiveFeaturedProducts: Product[] = 
+
+  topFiveFeaturedProducts: Product[] =
     this.products
       .filter( product => product.featured )
       .sort( () => Math.random() - 0.5)
       .slice(0, 5);
 
-  topFiveDiscountProducts: Product[] = 
+  topFiveDiscountProducts: Product[] =
     this.products
       .sort( () => Math.random() - 0.5)
       .slice(0, 5);
 
-  
-  //featuredProduct: Product[] = this.productService.getFeatured(true);
+
+  // featuredProduct: Product[] = this.productService.getFeatured(true);
 
   constructor( private productService: ProductserviceService ) { }
 
