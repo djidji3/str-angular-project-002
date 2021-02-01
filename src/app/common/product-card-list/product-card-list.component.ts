@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Product } from 'src/app/model/classes';
 
 @Component({
   selector: 'app-product-card-list',
@@ -6,10 +7,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./product-card-list.component.scss']
 })
 export class ProductCardListComponent implements OnInit {
+  @Input() products: Product[] = [];
+
+  product = this.products.forEach(item => item);
+  phrase: string = "";
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onChangePhrase(event: Event):void {
+    this.phrase = (event.target as HTMLInputElement).value;
+    console.log(this.phrase);
+    console.log("GOMBRÓL FELEMELTEM");
   }
 
 }
