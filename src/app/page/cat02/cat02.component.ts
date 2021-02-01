@@ -12,12 +12,13 @@ export class Cat02Component implements OnInit {
 
   womenProducts: Product[] = 
     this.products
-        .filter( products => products.catId > 200)
-        .sort( () => Math.random() - 0.5 );
-
-  topFiveFeaturedWomenProducts: Product[] =
+      .filter( products => products.catId > 200)
+      .sort( () => Math.random() - 0.5 );
+    
+    topFiveFeaturedWomenProducts: Product[] =
     this.womenProducts
-        .slice(0, 5);
+      .filter( product => product.featured )
+      .slice(0, 5);
 
   constructor( private productService: ProductserviceService ) { }
 

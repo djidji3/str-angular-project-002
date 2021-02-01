@@ -12,11 +12,12 @@ export class Cat01Component implements OnInit {
 
   menProducts: Product[] = 
     this.products
-        .filter( products => products.catId < 200)
-        .sort( () => Math.random() - 0.5 );
-
+      .filter( products => products.catId < 200)
+      .sort( () => Math.random() - 0.5 );
+    
   topFiveFeaturedMenProducts: Product[] =
-  this.menProducts
+    this.menProducts
+      .filter( product => product.featured )
       .slice(0, 5);
 
   constructor( private productService: ProductserviceService ) { }
