@@ -73,7 +73,7 @@ export class ProductserviceService {
     description: 'Jó minőségű pamutból készült fekete színű kabát. Kellemes viselet.',
     image: '/app/assets/img/ferfi-kabat-fekete.jpg',
     price: 45089,
-    stock: 10,
+    stock: 13,
     featured: true,
     active: true,
   }, {
@@ -83,7 +83,7 @@ export class ProductserviceService {
     description: 'Jó minőségű pamutból készült piros színű kabát. Kellemes viselet.',
     image: '/app/assets/img/ferfi-kabat-piros.jpg',
     price: 45800,
-    stock: 10,
+    stock: 87,
     featured: false,
     active: true,
   }, {
@@ -93,7 +93,7 @@ export class ProductserviceService {
     description: 'Jó minőségű pamutból készült sárga színű kabát. Kellemes viselet.',
     image: '/app/assets/img/ferfi-kabat-sarga.jpg',
     price: 45000,
-    stock: 10,
+    stock: 54,
     featured: true,
     active: true,
   }, {
@@ -133,7 +133,7 @@ export class ProductserviceService {
     description: 'Jó minőségű pamutból készült sötétszürke színű kardigán. Kellemes viselet.',
     image: '/app/assets/img/ferfi-kardigan-sotetszurke.png',
     price: 8560,
-    stock: 10,
+    stock: 33,
     featured: true,
     active: true,
   }, {
@@ -143,7 +143,7 @@ export class ProductserviceService {
     description: 'Jó minőségű pamutból készült szürke színű kardigán. Kellemes viselet.',
     image: '/app/assets/img/ferfi-kardigan-szurke.jpg',
     price: 8509,
-    stock: 10,
+    stock: 6,
     featured: true,
     active: true,
   }, {
@@ -153,7 +153,7 @@ export class ProductserviceService {
     description: 'Jó minőségű pamutból készült tarka színű kardigán. Kellemes viselet.',
     image: '/app/assets/img/ferfi-kardigán-tarka.jpg',
     price: 8510,
-    stock: 10,
+    stock: 41,
     featured: true,
     active: true,
   }, {
@@ -193,7 +193,7 @@ export class ProductserviceService {
     description: 'Jó minőségű pamutból készült zöld színű nadrág. Kellemes viselet.',
     image: '/app/assets/img/ferfi-nadrag-zold.jpg',
     price: 10510,
-    stock: 10,
+    stock: 19,
     featured: true,
     active: true,
   }, {
@@ -213,7 +213,7 @@ export class ProductserviceService {
     description: 'Jó minőségű pamutból készült fehér színű pulóver. Kellemes viselet.',
     image: '/app/assets/img/ferfi-pulover-feher.jpg',
     price: 8670,
-    stock: 10,
+    stock: 61,
     featured: true,
     active: true,
   }, {
@@ -233,7 +233,7 @@ export class ProductserviceService {
     description: 'Jó minőségű pamutból készült kék színű pulóver. Kellemes viselet.',
     image: '/app/assets/img/ferfi-pulover-kek.jpg',
     price: 8670,
-    stock: 10,
+    stock: 6,
     featured: false,
     active: true,
   }, {
@@ -243,7 +243,7 @@ export class ProductserviceService {
     description: 'Jó minőségű pamutból készült piros színű pulóver. Kellemes viselet.',
     image: '/app/assets/img/ferfi-pulover-piros.jpg',
     price: 8670,
-    stock: 10,
+    stock: 11,
     featured: true,
     active: true,
   }, {
@@ -273,7 +273,7 @@ export class ProductserviceService {
     description: 'Jó minőségű pamutból készült pöttyös színű felső. Kellemes viselet.',
     image: '/app/assets/img/noi-felso-pottyos.jpg',
     price: 9880,
-    stock: 10,
+    stock: 63,
     featured: false,
     active: true,
   }, {
@@ -283,7 +283,7 @@ export class ProductserviceService {
     description: 'Jó minőségű pamutból készült rózsaszín színű felső. Kellemes viselet.',
     image: '/app/assets/img/noi-felso-rozsaszin.jpg',
     price: 9880,
-    stock: 10,
+    stock: 41,
     featured: true,
     active: true,
   }, {
@@ -293,7 +293,7 @@ export class ProductserviceService {
     description: 'Jó minőségű pamutból készült tarka színű felső. Kellemes viselet.',
     image: '/app/assets/img/noi-felso-tarka.jpg',
     price: 9880,
-    stock: 10,
+    stock: 3,
     featured: true,
     active: true,
   }, {
