@@ -7,11 +7,11 @@ import { Product } from 'src/app/model/classes';
   styleUrls: ['./product-card-slider.component.scss']
 })
 export class ProductCardSliderComponent implements OnInit {
-  @Input() products: Product[];
+  @Input() products: Product[] = [];
 
-  constructor() { 
-    console.log(this.products);
-  }
+  product = this.products.forEach(item => item);
+
+  constructor() { }
     
   ngOnInit(): void {
   }

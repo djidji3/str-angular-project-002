@@ -7,12 +7,9 @@ import { Product } from 'src/app/model/classes';
   styleUrls: ['./product-card.component.scss']
 })
 export class ProductCardComponent implements OnInit {
-  @Input() products: Product[];
+  @Input() product: Product;
 
-
-  constructor() { 
-    console.log(this.products);
-  }
+  constructor() { }
 
   ngOnInit(): void {
   }

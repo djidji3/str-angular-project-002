@@ -1,12 +1,15 @@
-<div class="card" style="width: 18rem;">
-    <img src="{{ products[4].image }}" class="card-img-top" alt="{{ products[4].name }}">
-    <div class="card-body">
-        <h5 class="card-title">{{ products[4].name }}</h5>
-        <p class="card-text">
-            {{ products[4].description }}
-        </p>
-        <small class="text-muted">{{ products[4].stock }} db van raktáron</small>
-        <h6>${{ products[4].price }}</h6>
-        <a href="#" class="btn btn-primary">Megnézem</a>
+<div class="col mb-4">
+    <div class="card text-center bg-light shadow-sm">
+        <img src="{{ product.image }}" class="card-img-top" alt="{{ product.name }}">
+        <div class="card-body">
+            <h1>{{ product.id }}</h1>
+            <h5 class="card-title">{{ product.name }}</h5>
+            <p class="card-text">
+                {{ product.description }}
+            </p>
+            <small class="text-muted">{{ product.stock }} db van raktáron</small>
+            <h4 class="my-3">{{ product.price }} Ft</h4>
+            <a href="#" class="btn btn-info">Megnézem</a>
+        </div>
     </div>
 </div>

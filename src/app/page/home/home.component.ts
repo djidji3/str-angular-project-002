@@ -9,24 +9,26 @@ import { ProductserviceService } from 'src/app/service/productservice.service';
 })
 export class HomeComponent implements OnInit {
 
-  products = ProductserviceService.list;
+  products = this.productService.list;
   
   topFiveFeaturedProducts: Product[] = 
     this.products
       .filter( product => product.featured )
-      .sort( () => 0.5 - Math.random())
+      .sort( () => Math.random() - 0.5)
       .slice(0, 5);
 
   topFiveDiscountProducts: Product[] = 
     this.products
-      .sort( () => 0.5 - Math.random())
+      .sort( () => Math.random() - 0.5)
       .slice(0, 5);
 
-  constructor() { 
-    console.log(this.topFiveFeaturedProducts);
-    console.log(this.topFiveDiscountProducts);
-  }
   
+  //featuredProduct: Product[] = this.productService.getFeatured(true);
+
+  constructor( private productService: ProductserviceService ) { }
+
+
+
   ngOnInit(): void {
   }
 
