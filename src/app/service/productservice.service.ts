@@ -511,12 +511,4 @@ export class ProductserviceService {
 
   constructor() { }
 
-/*   getFeatured(randomize: boolean): Product[] {
-    const featured = this.list.filter(item => item.featured);
-    return randomize ? this.randomize() : featured;
-  } */
-
-  randomize(sourceArray: Product[]): Product[] {
-    return sourceArray.sort( () => Math.random() - 0.5);
-  }
 }
