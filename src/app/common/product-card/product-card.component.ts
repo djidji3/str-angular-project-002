@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Product } from 'src/app/model/product';
+import { Product } from 'src/app/model/classes';
 
 @Component({
   selector: 'app-product-card',
@@ -7,6 +7,7 @@ import { Product } from 'src/app/model/product';
   styleUrls: ['./product-card.component.scss']
 })
 export class ProductCardComponent implements OnInit {
+  @Input() product: Product;
 
   @Input() product: Product = new Product();
 
