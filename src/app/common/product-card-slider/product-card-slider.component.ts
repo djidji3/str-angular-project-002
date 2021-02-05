@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Product } from 'src/app/model/classes';
+import { Product } from 'src/app/model/product';
 
 @Component({
   selector: 'app-product-card-slider',
@@ -12,7 +12,7 @@ export class ProductCardSliderComponent implements OnInit {
   product = this.products.forEach(item => item);
 
   constructor() { }
-    
+
   ngOnInit(): void {
   }
 
