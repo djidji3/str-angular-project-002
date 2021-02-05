@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Product } from 'src/app/model/classes';
+import { Product } from 'src/app/model/product';
 import { ProductserviceService } from 'src/app/service/productservice.service';
 
 @Component({
@@ -10,11 +10,11 @@ import { ProductserviceService } from 'src/app/service/productservice.service';
 export class Cat02Component implements OnInit {
   products = this.productService.list;
 
-  womenProducts: Product[] = 
+  womenProducts: Product[] =
     this.products
       .filter( products => products.catId > 200)
       .sort( () => Math.random() - 0.5 );
-    
+
     topFiveFeaturedWomenProducts: Product[] =
     this.womenProducts
       .filter( product => product.featured )

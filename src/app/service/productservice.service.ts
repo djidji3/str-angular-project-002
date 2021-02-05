@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Product } from '../model/classes';
+import { Product } from '../model/product';
 
 @Injectable({
   providedIn: 'root'
@@ -511,12 +511,14 @@ export class ProductserviceService {
 
   constructor() { }
 
-/*   getFeatured(randomize: boolean): Product[] {
+  getFeatured(randomized?: boolean): Product[] {
     const featured = this.list.filter(item => item.featured);
-    return randomize ? this.randomize() : featured;
-  } */
+    return randomized ? this.randomize(featured) : featured;
+  }
 
   randomize(sourceArray: Product[]): Product[] {
     return sourceArray.sort( () => Math.random() - 0.5);
   }
+
+
 }
