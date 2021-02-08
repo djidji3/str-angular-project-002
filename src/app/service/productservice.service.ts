@@ -1,12 +1,14 @@
 import { Injectable } from '@angular/core';
 import { Product } from '../model/product';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductserviceService {
 
-  list: Product[] = [{
+  /* list: Product[] = [{
     id: 1,
     catId: 111,
     name: 'Férfi ing bézs színű',
@@ -507,14 +509,66 @@ export class ProductserviceService {
     featured: true,
     active: true,
   }
-  ];
+  ]; */
 
-  constructor() { }
+    /* a sever url,ahonnan az adatokat lekerdezzuk */
+  apiUrl: string = 'http://localhost:3000/products';
+
+  constructor( private http: HttpClient ) { }
+
+  create(product: Product): Observable<Product> {
+    return this.http.post<Product>(this.apiUrl, product);
+  }
+
+ /**
+  * Osszes termek lekerdezese
+  */
+  getAll(): Observable<Product[]>{
+    return this.http.get<Product[]>(this.apiUrl);
+  }
+
+  /**
+   * egy termek lekerdezese
+   * @param product
+   */
+  get(product: Product): Observable<Product> {
+    return this.http.get<Product>(`${this.apiUrl}/${product.id}`);
+  }
+
+  /**
+   * egy termek torlese
+   * @param product
+   */
+  remove(product: Product): Observable<Product> {
+    return this.http.delete<Product>(`${this.apiUrl}/${product.id}`);
+  }
+
+  /**
+   * egy termek modositasa
+   * @param product
+   */
+  update(product: Product): Observable<Product> {
+    return this.http.patch<Product>(`${this.apiUrl}/${product.id}`, product);
+  }
 
   getFeatured(randomized?: boolean): Product[] {
     const featured = this.list.filter(item => item.featured);
     return randomized ? this.randomize(featured) : featured;
   }
+
+  /*   getFeatured(randomized?: boolean): Product[] {
+    const featured = this.getAll()
+    .subscribe(
+      product => console.log(product),
+      error => console.error(error),
+      () => console.log("COMPLETE")
+    );
+   .pipe(
+    map( users => users.filter(featuredUsers => featuredUsers.featured) )
+  );
+
+  return randomized ? this.randomize(featured) : featured;
+} */
 
   randomize(sourceArray: Product[]): Product[] {
     return sourceArray.sort( () => Math.random() - 0.5);
