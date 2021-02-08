@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 import { Product } from 'src/app/model/product';
 import { ProductserviceService } from 'src/app/service/productservice.service';
 
@@ -8,7 +9,7 @@ import { ProductserviceService } from 'src/app/service/productservice.service';
   styleUrls: ['./cat02.component.scss']
 })
 export class Cat02Component implements OnInit {
-  products = this.productService.list;
+/*   products = this.productService.list;
 
   womenProducts: Product[] =
     this.products
@@ -18,9 +19,15 @@ export class Cat02Component implements OnInit {
     topFiveFeaturedWomenProducts: Product[] =
     this.womenProducts
       .filter( product => product.featured )
-      .slice(0, 5);
+      .slice(0, 5); */
 
-  constructor( private productService: ProductserviceService ) { }
+  products: Observable<Product[]>;
+
+  constructor(
+    private productService: ProductserviceService
+  ) { 
+    this.products = productService.getAll();
+    }
 
   ngOnInit(): void {
   }

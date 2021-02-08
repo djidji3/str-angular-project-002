@@ -2,5 +2,5 @@
     <input (keyup)="onChangePhrase($event)" class="form-control mb-4" type="text" placeholder="Keresés">
 </form>
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-5">
-    <app-product-card *ngFor="let product of products | filter:phrase:'name'" [product]="product"></app-product-card>
+    <app-product-card *ngFor="let product of products | async | filter:phrase:'name'" [product]="product | async"></app-product-card>
 </div>

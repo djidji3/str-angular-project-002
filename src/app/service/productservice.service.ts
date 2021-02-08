@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Product } from '../model/product';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -551,21 +552,21 @@ export class ProductserviceService {
     return this.http.patch<Product>(`${this.apiUrl}/${product.id}`, product);
   }
 
-  getFeatured(randomized?: boolean): Product[] {
+/*   getFeatured(randomized?: boolean): Product[] {
     const featured = this.list.filter(item => item.featured);
     return randomized ? this.randomize(featured) : featured;
-  }
+  } */
 
-  /*   getFeatured(randomized?: boolean): Product[] {
+/*   getFeatured(randomized?: boolean): void {
     const featured = this.getAll()
     .subscribe(
       product => console.log(product),
       error => console.error(error),
       () => console.log("COMPLETE")
     );
-   .pipe(
-    map( users => users.filter(featuredUsers => featuredUsers.featured) )
-  );
+      .pipe(
+        map( users => users.filter(featuredUsers => featuredUsers.featured) )
+      );
 
   return randomized ? this.randomize(featured) : featured;
 } */
