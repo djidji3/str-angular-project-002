@@ -1,4 +1,5 @@
 import { Component, OnInit, Output } from '@angular/core';
+import { Observable } from 'rxjs';
 import { Product } from 'src/app/model/product';
 import { ProductserviceService } from 'src/app/service/productservice.service';
 
@@ -9,7 +10,7 @@ import { ProductserviceService } from 'src/app/service/productservice.service';
 })
 export class HomeComponent implements OnInit {
 
-  products = this.productService.list;
+  products: Observable<Product[]> = this.productService.getAll();
 
   topFiveFeaturedProducts: Product[] = this.productService.getFeatured(true)
     .slice(0, 5);

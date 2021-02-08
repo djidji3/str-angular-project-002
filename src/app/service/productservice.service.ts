@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class ProductserviceService {
 
-  list: Product[] = [{
+  /* list: Product[] = [{
     id: 1,
     catId: 111,
     name: 'Férfi ing bézs színű',
@@ -509,13 +509,14 @@ export class ProductserviceService {
     featured: true,
     active: true,
   }
-  ];
+  ]; */
 
     /* a sever url,ahonnan az adatokat lekerdezzuk */
   apiUrl: string = 'http://localhost:3000/products';
-  constructor( private http: HttpClient) { }
 
-  create(product:Product): Observable<Product> {
+  constructor( private http: HttpClient ) { }
+
+  create(product: Product): Observable<Product> {
     return this.http.post<Product>(this.apiUrl, product);
   }
 
@@ -530,7 +531,7 @@ export class ProductserviceService {
    * egy termek lekerdezese
    * @param product
    */
-  get(product:Product): Observable<Product> {
+  get(product: Product): Observable<Product> {
     return this.http.get<Product>(`${this.apiUrl}/${product.id}`);
   }
 
@@ -554,6 +555,20 @@ export class ProductserviceService {
     const featured = this.list.filter(item => item.featured);
     return randomized ? this.randomize(featured) : featured;
   }
+
+  /*   getFeatured(randomized?: boolean): Product[] {
+    const featured = this.getAll()
+    .subscribe(
+      product => console.log(product),
+      error => console.error(error),
+      () => console.log("COMPLETE")
+    );
+   .pipe(
+    map( users => users.filter(featuredUsers => featuredUsers.featured) )
+  );
+
+  return randomized ? this.randomize(featured) : featured;
+} */
 
   randomize(sourceArray: Product[]): Product[] {
     return sourceArray.sort( () => Math.random() - 0.5);
