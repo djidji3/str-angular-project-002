@@ -1,5 +1,12 @@
 <div class="container">
     <div class="row">
+        <div class="col-6 offset-6 mb-5 mt-5 ">
+            <input [(ngModel)]="phrase" type="text" class="form-control" placeholder="szűrés terméknév alapján">
+        </div>
+    </div>
+
+
+    <div class="row">
         <div class="col-6">
             <table class="table table-striped">
                 <thead>
@@ -10,7 +17,7 @@
                 </thead>
 
                 <tbody>
-                    <tr *ngFor="let product of productList$ |async" class="">
+                    <tr *ngFor="let product of productList$ |async | filter:phrase:'name'">
                         <td *ngFor="let col of cols">
                             <input *ngIf="col.editable" [(ngModel)]="product[col.key]" type="text">
                             <span *ngIf="!col.editable">{{ product[col.key] }}</span>

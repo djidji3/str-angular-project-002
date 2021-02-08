@@ -16,6 +16,8 @@ export class DataEditorComponent implements OnInit {
 
   @Input('ngModel') ngModel: string;
 
+  phrase: string = "";
+
   constructor(
     private productService: ProductserviceService,
     private config: ConfigService
