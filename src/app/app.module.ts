@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import {FormsModule} from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +13,8 @@ import { ProductCardComponent } from './common/product-card/product-card.compone
 import { ProductCardSliderComponent } from './common/product-card-slider/product-card-slider.component';
 import { ProductCardListComponent } from './common/product-card-list/product-card-list.component';
 import { FilterPipe } from './pipe/filter.pipe';
+import { AdminComponent } from './page/admin/admin.component';
+import { DataEditorComponent } from './common/data-editor/data-editor.component';
 
 @NgModule({
   declarations: [
@@ -24,11 +27,14 @@ import { FilterPipe } from './pipe/filter.pipe';
     ProductCardSliderComponent,
     ProductCardListComponent,
     FilterPipe,
+    AdminComponent,
+    DataEditorComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
