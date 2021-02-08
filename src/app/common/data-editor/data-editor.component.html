@@ -1,41 +1,37 @@
-<div class="container">
+<div class="container" m-0>
     <div class="row">
-        <div class="col-6 offset-6 mb-5 mt-5 ">
+        <div class="col-6  mb-5 mt-5 ">
             <input [(ngModel)]="phrase" type="text" class="form-control" placeholder="szűrés terméknév alapján">
         </div>
     </div>
+</div>
 
+<div class="row">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th *ngFor="let col of cols">{{col.text}}</th>
+                <th></th>
+            </tr>
+        </thead>
 
-    <div class="row">
-        <div class="col-6">
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th *ngFor="let col of cols">{{col.text}}</th>
-                        <th></th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr *ngFor="let product of productList$ |async | filter:phrase:'name'">
-                        <td *ngFor="let col of cols">
-                            <input *ngIf="col.editable" [(ngModel)]="product[col.key]" type="text">
-                            <span *ngIf="!col.editable">{{ product[col.key] }}</span>
-                        </td>
-                        <td>
-                            <div class="btn-group" role="group" aria-label="contols">
-                                <button (click)="onUpdateProduct(product)" type="button" class="btn btn-primary">
+        <tbody>
+            <tr *ngFor="let product of productList$ |async | filter:phrase:'name'">
+                <td *ngFor="let col of cols">
+                    <input *ngIf="col.editable" [(ngModel)]="product[col.key]" type="text">
+                    <span *ngIf="!col.editable">{{ product[col.key] }}</span>
+                </td>
+                <td>
+                    <div class="btn-group" role="group" aria-label="contols">
+                        <button (click)="onUpdateProduct(product)" type="button" class="btn btn-primary">
                           <i class="fa fa-refresh"></i>
                         </button>
-                                <button (click)="onDeleteProduct(product)" type="button" class="btn btn-danger">
+                        <button (click)="onDeleteProduct(product)" type="button" class="btn btn-danger">
                           <i class="fa fa-trash"></i>
                         </button>
-                            </div>
-                        </td>
-                    </tr>
-                </tbody>
-
-            </table>
-        </div>
-    </div>
-</div> -
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
