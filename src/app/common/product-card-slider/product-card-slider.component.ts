@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { Product, Category } from 'src/app/model/classes';
+import { Component, Input, OnInit } from '@angular/core';
+import { Product } from 'src/app/model/product';
 
 @Component({
   selector: 'app-product-card-slider',
@@ -7,10 +7,9 @@ import { Product, Category } from 'src/app/model/classes';
   styleUrls: ['./product-card-slider.component.scss']
 })
 export class ProductCardSliderComponent implements OnInit {
+  @Input() products: Product[] = [];
 
-  products: Product[] = [
-    
-  ]
+  product = this.products.forEach(item => item);
 
   constructor() { }
 
