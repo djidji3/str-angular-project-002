@@ -21,13 +21,16 @@ export class Cat02Component implements OnInit {
       .filter( product => product.featured )
       .slice(0, 5); */
 
-  products: Observable<Product[]>;
+  catId: number = 2;
+  productList$: Observable<Product[]> = this.productService.getAll();
+
+  /* productList$: Observable<Product[]> = this.productService.getAll().pipe(
+    map( products => products.filter( product => product.catId === 2 ) )
+  ); */
 
   constructor(
     private productService: ProductserviceService
-  ) { 
-    this.products = productService.getAll();
-    }
+  ) { }
 
   ngOnInit(): void {
   }

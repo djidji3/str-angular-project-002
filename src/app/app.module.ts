@@ -13,6 +13,8 @@ import { ProductCardSliderComponent } from './common/product-card-slider/product
 import { ProductCardListComponent } from './common/product-card-list/product-card-list.component';
 import { FilterPipe } from './pipe/filter.pipe';
 import { RandomizePipe } from './pipe/randomize.pipe';
+import { CategoryPipe } from './pipe/category.pipe';
+import { FeaturedPipe } from './pipe/featured.pipe';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,8 @@ import { RandomizePipe } from './pipe/randomize.pipe';
     ProductCardListComponent,
     FilterPipe,
     RandomizePipe,
+    CategoryPipe,
+    FeaturedPipe,
   ],
   imports: [
     BrowserModule,

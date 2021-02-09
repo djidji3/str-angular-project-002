@@ -11,23 +11,11 @@ import { map } from 'rxjs/operators';
 })
 export class HomeComponent implements OnInit {
 
-  /*   topFiveFeaturedProducts: Product[] = this.productService.getFeatured(true)
-  .slice(0, 5);
-  topFiveDiscountProducts: Product[] = this.productService.randomize(this.products)
-  .slice(0, 5); */
-
-  products = this.productService.getAll().subscribe(
-    product => console.log(product),
-    err => console.error(err) ,
-    () => console.log("COMPLETE")
-  );  //ez csak azért kell, hogy valamivel tudjak dolgozni
-
+  productList$: Observable<Product[]> = this.productService.getAll();
 
   topFiveFeaturedProducts: Observable<Product[]> = this.productService.getAll().pipe(
     map( products => products.filter(featuredProducts => featuredProducts.featured) )
   );
-
-  productList$: Observable<Product[]> = this.productService.getAll();
 
   constructor(
     private productService: ProductserviceService
