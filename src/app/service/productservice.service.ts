@@ -552,28 +552,4 @@ export class ProductserviceService {
     return this.http.patch<Product>(`${this.apiUrl}/${product.id}`, product);
   }
 
-/*   getFeatured(randomized?: boolean): Product[] {
-    const featured = this.list.filter(item => item.featured);
-    return randomized ? this.randomize(featured) : featured;
-  } */
-
-/*   getFeatured(randomized?: boolean): void {
-    const featured = this.getAll()
-    .subscribe(
-      product => console.log(product),
-      error => console.error(error),
-      () => console.log("COMPLETE")
-    );
-      .pipe(
-        map( users => users.filter(featuredUsers => featuredUsers.featured) )
-      );
-
-  return randomized ? this.randomize(featured) : featured;
-} */
-
-  randomize(sourceArray: Product[]): Product[] {
-    return sourceArray.sort( () => Math.random() - 0.5);
-  }
-
-
 }
