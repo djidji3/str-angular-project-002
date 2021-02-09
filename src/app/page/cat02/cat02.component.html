@@ -1,5 +1,5 @@
 <h2 class="bg-info shadow-sm">Kiemelt termékek - Női</h2>
-<app-product-card-slider [products]="productList$ | async | featured | randomize | slice:0:5" class="card-group"></app-product-card-slider>
+<app-product-card-slider [products]="productList$ | async | featured | randomize | filter:'catId':2 | slice:0:5" class="card-group"></app-product-card-slider>
 
 <h2 class="bg-lighterGray shadow-sm">Összes termék - Női</h2>
-<app-product-card-list [products]="productList$ | async | randomize | category:catId" class="card-group"></app-product-card-list>
+<app-product-card-list [products]="productList$ | async | randomize | filter:'catId':2" class="card-group"></app-product-card-list>
