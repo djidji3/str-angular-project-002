@@ -23,6 +23,13 @@ export class Cat01Component implements OnInit {
   ) { }
 
   ngOnInit(): void {
+/*     this.productService.getAll().subscribe( products => {
+      console.log('CAT01-products: ', products);
+      console.log('CAT01-productsTYPE: ', typeof products);
+      this.productList = products;
+      console.log('CAT01-productList: ', this.productList);
+      console.log('CAT01-productListTYPE: ', typeof this.productList);
+    } ); */
   }
 
 }

@@ -6,11 +6,29 @@ import { Product } from '../model/product';
 })
 export class CategoryPipe implements PipeTransform {
 
-  transform(productArray: Product[], catId: number): Product[] {
+  transform(productArray: any[], catId: number): any[] {
     if (!Array.isArray(productArray) || !catId) {
+      console.log("PROBLÉMA A CATEGORY PIPE-AL")
       return productArray;
     }
-    return productArray.filter( product => catId == product.catId)
+    return productArray.filter( product => {
+      product.catId === catId;
+    })
   }
+
+
+  //1.verzió
+  /* transform(value: any[], cat: number): any[] {
+
+    if (!Array.isArray(value) || !cat) {
+      return value;
+    }
+
+    return value.filter( item => {
+      return item['catId'] === cat;
+    });
+  } */
+
+
 
 }

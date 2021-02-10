@@ -13,8 +13,8 @@ export class HomeComponent implements OnInit {
 
   productList$: Observable<Product[]> = this.productService.getAll();
 
-  topFiveFeaturedProducts: Observable<Product[]> = this.productService.getAll().pipe(
-    map( products => products.filter(featuredProducts => featuredProducts.featured) )
+  featuredProducts$: Observable<Product[]> = this.productService.getAll().pipe(
+    map( products => products.filter(featProducts => featProducts.featured) )
   );
 
   constructor(
