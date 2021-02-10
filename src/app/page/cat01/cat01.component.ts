@@ -12,24 +12,24 @@ import { ProductserviceService } from 'src/app/service/productservice.service';
 export class Cat01Component implements OnInit {
 
   catId: number = 1;
-  productList$: Observable<Product[]> = this.productService.getAll();
+  
+  menProductList$: Observable<Product[]> = this.productService.getAll().pipe(
+    map( products => products
+      .filter(menProducts => menProducts.catid === this.catId)
+    )
+  );
 
-  // productList$: Observable<Product[]> = this.productService.getAll().pipe(
-  //   map( products => products.filter( product => product.catId === 1 ) )
-  // );
+  featuredMenProducts$: Observable<Product[]> = this.productService.getAll().pipe(
+    map( products => products
+      .filter(featProducts => featProducts.featured) 
+      .filter(menProducts => menProducts.catid === this.catId)
+    )
+  );
 
   constructor(
     private productService: ProductserviceService
   ) { }
 
-  ngOnInit(): void {
-/*     this.productService.getAll().subscribe( products => {
-      console.log('CAT01-products: ', products);
-      console.log('CAT01-productsTYPE: ', typeof products);
-      this.productList = products;
-      console.log('CAT01-productList: ', this.productList);
-      console.log('CAT01-productListTYPE: ', typeof this.productList);
-    } ); */
-  }
+  ngOnInit(): void { }
 
 }

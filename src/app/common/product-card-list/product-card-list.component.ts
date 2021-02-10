@@ -10,10 +10,9 @@ import { Product } from 'src/app/model/product';
 export class ProductCardListComponent implements OnInit {
   @Input() products: Observable<Product[]>;
 
-  phrase: string = "";
+  phrase: string = '';
   
-  constructor() {
-   }
+  constructor() { }
 
   ngOnInit(): void {
   }

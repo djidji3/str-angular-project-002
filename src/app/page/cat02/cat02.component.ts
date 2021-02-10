@@ -12,11 +12,19 @@ import { ProductserviceService } from 'src/app/service/productservice.service';
 export class Cat02Component implements OnInit {
 
   catId: number = 2;
-  productList$: Observable<Product[]> = this.productService.getAll();
 
-  // productList$: Observable<Product[]> = this.productService.getAll().pipe(
-  //   map( products => products.filter( product => product.catId === 2 ) )
-  // );
+  womenProductList$: Observable<Product[]> = this.productService.getAll().pipe(
+    map( products => products
+      .filter(menProducts => menProducts.catid === this.catId)
+    )
+  );
+
+  featuredWomenProducts$: Observable<Product[]> = this.productService.getAll().pipe(
+    map( products => products
+      .filter(featProducts => featProducts.featured) 
+      .filter(menProducts => menProducts.catid === this.catId)
+    )
+  );
 
   constructor(
     private productService: ProductserviceService

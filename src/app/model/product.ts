@@ -1,4 +1,5 @@
 export class Product {
+  [propname: string]: any;
   id: number = 0;
   catid: number = 0;
   name: string = '';

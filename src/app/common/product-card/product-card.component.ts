@@ -8,15 +8,9 @@ import { Product } from 'src/app/model/product';
   styleUrls: ['./product-card.component.scss']
 })
 export class ProductCardComponent implements OnInit {
-  @Input() product: Observable<Product>;
-  prod: Product;
+  @Input() product: Product;
 
-  constructor() {
-    this.product.subscribe( pro => {
-      this.prod = pro;
-    })
-
-  }
+  constructor() { }
 
   ngOnInit(): void {
   }
