@@ -13,6 +13,9 @@ import { ProductCardComponent } from './common/product-card/product-card.compone
 import { ProductCardSliderComponent } from './common/product-card-slider/product-card-slider.component';
 import { ProductCardListComponent } from './common/product-card-list/product-card-list.component';
 import { FilterPipe } from './pipe/filter.pipe';
+import { RandomizePipe } from './pipe/randomize.pipe';
+import { CategoryPipe } from './pipe/category.pipe';
+import { FeaturedPipe } from './pipe/featured.pipe';
 import { AdminComponent } from './page/admin/admin.component';
 import { DataEditorComponent } from './common/data-editor/data-editor.component';
 
@@ -27,6 +30,9 @@ import { DataEditorComponent } from './common/data-editor/data-editor.component'
     ProductCardSliderComponent,
     ProductCardListComponent,
     FilterPipe,
+    RandomizePipe,
+    CategoryPipe,
+    FeaturedPipe,
     AdminComponent,
     DataEditorComponent,
   ],

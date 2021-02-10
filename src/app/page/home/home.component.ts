@@ -2,6 +2,7 @@ import { Component, OnInit, Output } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Product } from 'src/app/model/product';
 import { ProductserviceService } from 'src/app/service/productservice.service';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-home',
@@ -10,14 +11,11 @@ import { ProductserviceService } from 'src/app/service/productservice.service';
 })
 export class HomeComponent implements OnInit {
 
-  products: Observable<Product[]> = this.productService.getAll();
+  productList$: Observable<Product[]> = this.productService.getAll();
 
-  topFiveFeaturedProducts: Product[] = this.productService.getFeatured(true)
-    .slice(0, 5);
-
-  topFiveDiscountProducts: Product[] = this.productService.randomize(this.products)
-    .slice(0, 5);
-
+  featuredProducts$: Observable<Product[]> = this.productService.getAll().pipe(
+    map( products => products.filter(featProducts => featProducts.featured) )
+  );
 
   constructor(
     private productService: ProductserviceService

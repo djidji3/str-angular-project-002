@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 import { Product } from 'src/app/model/product';
 
 @Component({
@@ -7,9 +8,7 @@ import { Product } from 'src/app/model/product';
   styleUrls: ['./product-card-slider.component.scss']
 })
 export class ProductCardSliderComponent implements OnInit {
-  @Input() products: Product[] = [];
-
-  product = this.products.forEach(item => item);
+  @Input() products: Observable<Product[]>;
 
   constructor() { }
 
