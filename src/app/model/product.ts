@@ -1,6 +1,7 @@
 export class Product {
+  [propname: string]: any;
   id: number = 0;
-  catId: number = 0;
+  catid: number = 0;
   name: string = '';
   description: string = '';
   image: string = '';
@@ -12,7 +13,7 @@ export class Product {
   constructor(properties?: Product) {
     if (properties) {
       this.id = properties.id;
-      this.catId = properties.catId;
+      this.catid = properties.catid;
       this.name = properties.name;
       this.description = properties.description;
       this.image = properties.image;

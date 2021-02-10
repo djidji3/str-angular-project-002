@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 import { Product } from 'src/app/model/product';
 
 @Component({
@@ -7,11 +8,10 @@ import { Product } from 'src/app/model/product';
   styleUrls: ['./product-card-list.component.scss']
 })
 export class ProductCardListComponent implements OnInit {
-  @Input() products: Product[] = [];
+  @Input() products: Observable<Product[]>;
 
-  product = this.products.forEach(item => item);
-  phrase: string = "";
-
+  phrase: string = '';
+  
   constructor() { }
 
   ngOnInit(): void {

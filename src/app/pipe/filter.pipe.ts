@@ -4,12 +4,13 @@ import { Pipe, PipeTransform } from '@angular/core';
   name: 'filter'
 })
 export class FilterPipe implements PipeTransform {
+
   transform(value: any[] | null, phrase: string | number | boolean, key: string): any[] | null {
-    if ( !Array.isArray(value) || !phrase || !key ) {
+    if (!Array.isArray(value) || !key || !phrase) {
       return value;
     }
 
-    phrase = typeof phrase !== 'number' ? (phrase + '').toLowerCase() : phrase;
+    phrase = typeof phrase !== 'number' ? ('' + phrase).toLowerCase() : phrase;
 
     return value.filter( item => {
       if (typeof item[key] === 'number' && typeof phrase === 'number') {
@@ -19,4 +20,5 @@ export class FilterPipe implements PipeTransform {
       return ('' + item[key]).toLowerCase().includes( (phrase as string) );
     });
   }
+
 }
