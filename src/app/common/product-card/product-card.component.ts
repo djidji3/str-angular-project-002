@@ -9,8 +9,14 @@ import { Product } from 'src/app/model/product';
 })
 export class ProductCardComponent implements OnInit {
   @Input() product: Observable<Product>;
+  prod: Product;
 
-  constructor() { }
+  constructor() {
+    this.product.subscribe( pro => {
+      this.prod = pro;
+    })
+
+  }
 
   ngOnInit(): void {
   }
