@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import {FormsModule} from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,6 +16,8 @@ import { FilterPipe } from './pipe/filter.pipe';
 import { RandomizePipe } from './pipe/randomize.pipe';
 import { CategoryPipe } from './pipe/category.pipe';
 import { FeaturedPipe } from './pipe/featured.pipe';
+import { AdminComponent } from './page/admin/admin.component';
+import { DataEditorComponent } from './common/data-editor/data-editor.component';
 
 @NgModule({
   declarations: [
@@ -30,11 +33,14 @@ import { FeaturedPipe } from './pipe/featured.pipe';
     RandomizePipe,
     CategoryPipe,
     FeaturedPipe,
+    AdminComponent,
+    DataEditorComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
