@@ -1,42 +1,9 @@
 {
   "products": [
     {
-      "id": 1,
-      "catid": 1,
-      "name": "Férfi ing bézs színű",
-      "description": "Jó minőségű pamutból készült bézs színű ing. Kellemes viselet.",
-      "image": "/assets/img/ferfi-ing-bezs.jpg",
-      "price": 12000,
-      "stock": 5,
-      "featured": false,
-      "active": true
-    },
-    {
-      "id": 2,
-      "catid": 1,
-      "name": "Férfi ing kék színű",
-      "description": "Jó minőségű pamutból készült kék színű ing. Kellemes viselet.",
-      "image": "/assets/img/ferfi-ing-kek.jpg",
-      "price": 12300,
-      "stock": 10,
-      "featured": true,
-      "active": true
-    },
-    {
-      "id": 3,
-      "catid": 1,
-      "name": "Férfi ing piros színű",
-      "description": "Jó minőségű pamutból készült piros színű ing. Kellemes viselet.",
-      "image": "/assets/img/ferfi-ing-piros.jpg",
-      "price": 12100,
-      "stock": 10,
-      "featured": true,
-      "active": true
-    },
-    {
       "id": 4,
       "catid": 1,
-      "name": "Férfi ing rózsaszín színű",
+      "name": "Férfi ing rózsaszín színűek",
       "description": "Jó minőségű pamutból készült rózsaszín színű ing. Kellemes viselet.",
       "image": "/assets/img/ferfi-ing-rozsaszin.jpg",
       "price": 12500,

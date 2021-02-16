@@ -5,7 +5,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class FilterPipe implements PipeTransform {
 
-  transform(value: any[] | null, phrase: string | number | boolean, key: string): any[] | null {
+  transform(value: any[], key: string, phrase: string | number | boolean): any[] | null {
     if (!Array.isArray(value) || !key || !phrase) {
       return value;
     }

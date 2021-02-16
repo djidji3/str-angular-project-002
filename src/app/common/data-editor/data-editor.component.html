@@ -1,6 +1,44 @@
+<!-- {{productList$ | async | json}} -->
+<!-- {{filterKeys[0]}} -->
+
 <div class="container">
     <div class="row">
-        <div class="col-6">
+        <div class="col-3 offset-5 m-5">
+            <select [(ngModel)]="filterKey" class="form-control">
+              <option *ngFor="let key of filterKeys" [value]="key">{{key}}</option>
+            </select>
+
+        </div>
+        <div class="col-4">
+            <input [(ngModel)]="phrase" type="text" class="form-control m-5" placeholder="keresés">
+        </div>
+    </div>
+
+    <!-- lapozo -->
+    <!--
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+ -->
+    <!-- <li (click)="onPaginate($event, btn)" class="page-item"><a class="page-link" href="#">{{btn.page}}</a></li> -->
+    <!--             <li class="page-item"><a class="page-link" href="#">4</a></li>
+
+
+
+            <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+            </li>
+        </ul>
+    </nav>
+ -->
+    <!-- /lapozo -->
+    <div class="row">
+        <div class="col-12">
             <table class="table table-striped">
                 <thead>
                     <tr>
@@ -8,9 +46,9 @@
                         <th></th>
                     </tr>
                 </thead>
-
+                <!-- | slice:0:10 filtert hasznalva csokkenthetem a sorok szamat a listanak  -->
                 <tbody>
-                    <tr *ngFor="let product of productList$ |async" class="">
+                    <tr *ngFor="let product of productList$ |async | filter:filterKey:phrase  ">
                         <td *ngFor="let col of cols">
                             <input *ngIf="col.editable" [(ngModel)]="product[col.key]" type="text">
                             <span *ngIf="!col.editable">{{ product[col.key] }}</span>
@@ -31,4 +69,4 @@
             </table>
         </div>
     </div>
-</div> -
+</div>

@@ -1,51 +1,52 @@
 import { Injectable } from '@angular/core';
 import { Product } from '../model/product';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Subject } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ProductserviceService {
-
   /* A szever url, ahonnan az adatokat lekérdezzük. */
   apiUrl: string = 'http://localhost:3000/products';
 
-  constructor( private http: HttpClient ) { }
+  /* ezt a valtozot figyelem az alkalmazas tobbi reszeben */
+  list$: Subject<Product[]> = new Subject();
 
-  create(product: Product): Observable<Product> {
-    return this.http.post<Product>(this.apiUrl, product);
-  }
+  constructor(private http: HttpClient) {}
 
- /**
-  * Az összes termék lekérdezése.
-  */
-  getAll(): Observable<Product[]>{
-    return this.http.get<Product[]>(this.apiUrl);
+  create(product: Product): void {
+    this.http
+      .post<Product>(this.apiUrl, product)
+      .subscribe(() => this.getAll());
   }
 
   /**
-   * Egy termék lekérdezése.
-   * @param product
+   * Az összes termék lekérdezése.
    */
-  get(product: Product): Observable<Product> {
-    return this.http.get<Product>(`${this.apiUrl}/${product.id}`);
+  getAll(): void {
+    this.http
+      .get<Product[]>(this.apiUrl)
+      .subscribe((products) => this.list$.next(products));
   }
 
   /**
    * Egy termék törlése.
    * @param product
    */
-  remove(product: Product): Observable<Product> {
-    return this.http.delete<Product>(`${this.apiUrl}/${product.id}`);
+  remove(product: Product): void {
+    this.http
+      .delete<Product>(`${this.apiUrl}/${product.id}`)
+      .subscribe(() => this.getAll());
   }
 
   /**
    * Egy termék módosítása.
    * @param product
    */
-  update(product: Product): Observable<Product> {
-    return this.http.patch<Product>(`${this.apiUrl}/${product.id}`, product);
+  update(product: Product): void {
+    this.http
+      .patch<Product>(`${this.apiUrl}/${product.id}`, product)
+      .subscribe(() => this.getAll());
   }
-
 }

@@ -13,15 +13,15 @@ export class Cat02Component implements OnInit {
 
   catId: number = 2;
 
-  womenProductList$: Observable<Product[]> = this.productService.getAll().pipe(
+  womenProductList$: Observable<Product[]> = this.productService.list$.pipe(
     map( products => products
       .filter(menProducts => menProducts.catid === this.catId)
     )
   );
 
-  featuredWomenProducts$: Observable<Product[]> = this.productService.getAll().pipe(
+  featuredWomenProducts$: Observable<Product[]> = this.productService.list$.pipe(
     map( products => products
-      .filter(featProducts => featProducts.featured) 
+      .filter(featProducts => featProducts.featured)
       .filter(menProducts => menProducts.catid === this.catId)
     )
   );
@@ -31,6 +31,6 @@ export class Cat02Component implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    this.productService.getAll();
   }
-
 }

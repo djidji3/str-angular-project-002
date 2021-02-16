@@ -11,9 +11,9 @@ import { map } from 'rxjs/operators';
 })
 export class HomeComponent implements OnInit {
 
-  productList$: Observable<Product[]> = this.productService.getAll();
+  productList$: Observable<Product[]> = this.productService.list$;
 
-  featuredProducts$: Observable<Product[]> = this.productService.getAll().pipe(
+  featuredProducts$: Observable<Product[]> = this.productService.list$.pipe(
     map( products => products.filter(featProducts => featProducts.featured) )
   );
 
@@ -22,6 +22,7 @@ export class HomeComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    this.productService.getAll();
   }
 
 }
